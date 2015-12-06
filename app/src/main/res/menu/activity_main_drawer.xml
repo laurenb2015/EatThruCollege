@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/cat">
+            <menu>
+                <item android:id="@+id/nav_cat1" android:icon="@android:drawable/ic_lock_idle_charging"
+                    android:title="@string/cat1" />
+                <item android:id="@+id/nav_cat2" android:icon="@drawable/sleep"
+                    android:title="@string/cat2" />
+                <item android:id="@+id/nav_cat3" android:icon="@drawable/brain"
+                    android:title="@string/cat3" />
+                <item android:id="@+id/nav_cat4" android:icon="@drawable/pig"
+                    android:title="@string/cat4" />
+                <item android:id="@+id/nav_cat5" android:icon="@drawable/sun"
+                    android:title="@string/cat5" />
+                <item android:id="@+id/nav_cat6" android:icon="@drawable/drop"
+                    android:title="@string/cat6" />
+                <item android:id="@+id/nav_cat7" android:icon="@drawable/heart"
+                    android:title="@string/cat7" />
+                <item android:id="@+id/nav_cat8" android:icon="@drawable/virus"
+                    android:title="@string/cat8" />
+                <item android:id="@+id/nav_cat9" android:icon="@drawable/yin_yang"
+                    android:title="@string/cat9" />
+                <item android:id="@+id/nav_cat10" android:icon="@drawable/scale"
+                    android:title="@string/cat10" />
+                <item android:id="@+id/nav_cat11" android:icon="@android:drawable/ic_menu_delete"
+                    android:title="@string/cat11" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="@string/more_options">
+        <menu>
+            <item android:id="@+id/nav_search" android:icon="@android:drawable/ic_menu_search"
+                android:title="@string/menu1" />
+            <item android:id="@+id/nav_site" android:icon="@drawable/ebook"
+                android:title="@string/menu2" />
+            <item android:id="@+id/nav_contact" android:icon="@android:drawable/ic_menu_send"
+                android:title="@string/menu3" />
+            <item android:id="@+id/nav_home" android:icon="@drawable/home"
+                android:title="@string/menu4" />
+        </menu>
+    </item>
+
+</menu>

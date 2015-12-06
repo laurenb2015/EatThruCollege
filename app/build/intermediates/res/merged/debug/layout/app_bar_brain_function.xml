@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ parent of content_main.xml;
+ child of activity_main.xml;
+ -->
+<!-- to save state of expanded/collapsed id was added-->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity" android:id="@+id/app_coordinator">
+    <!-- changes noted for adding collapsing toolbar -->
+    <!-- changing layout_height from wrap_content and adding ID and adding fitsSystemWindows-->
+    <android.support.design.widget.AppBarLayout android:layout_height="180dp" android:id="@+id/app_bar"
+        android:fitsSystemWindows="true" android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- adding outside wrapper of CollapsingToolbarLayout -->
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/toolbar_layout"
+            android:fitsSystemWindows="true" android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary">
+
+            <!-- adding layout_collapseMode -->
+            <!-- background originally:"?attr/colorPrimary"-->
+            <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+                android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/brain_food" app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- includes child layout xml file-->
+    <!-- for collapsing toolbar content_main.xml is also changed -->
+    <include layout="@layout/content_brain_function" />
+
+    <!-- hovering action button in lower right screen -->
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>
+<!-- From: file:/C:/Users/Lauren/StudioProjects/EatThruCollege/app/src/main/res/layout/app_bar_brain_function.xml -->
